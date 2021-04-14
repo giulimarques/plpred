@@ -1,0 +1,12 @@
+name: plpred
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - python=3.8
+  - jupyterlab
+  - openblas
+  - pip
+  - make
+  - pip:
+    - -r requirements.txt
