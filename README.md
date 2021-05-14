@@ -19,3 +19,4 @@ $ make setup
   - `plpred/`: diretório principal do pacote. Local de armazenamento das funções da aplicação: scripts de preprocessamento e de treinamento.
   - `model.pickle`: modelos são serializados utilizando arquivos `.pickle`, sendo salvos na pasta `data/models`.
   - `plpred/models`: disponibiliza modelos preditivos baseados em *Random Forest*, *Gradient Boosting*, *SVM* e redes neurais (MLP).
+  - `tests/`: conjunto de testes unitários para os componentes do Plpred.
