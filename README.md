@@ -77,3 +77,21 @@ $ make setup
   -m MODEL, --model MODEL
              trained model (.pickle) 
   ```
+
+  ### `plpred-server`
+
+  ```
+  usage: plpred-server [-h] -H HOST -p PORT -m MODEL
+
+  plpred-server: subcellular location prediction server
+  
+  optional arguments:
+  -h, --help
+              show this help message and exit
+  -H HOST, --host HOST
+              host adress
+-p PORT, --port PORT
+              host port
+-m MODEL, --model MODEL
+              trained model to deploy 
+```
