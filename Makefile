@@ -1,5 +1,5 @@
 setup:
-	conda create --file environment.yml || conda env update --file environment.yml
+	conda env create --file environment.yml || conda env update --file environment.yml
 
 run_exploratory_data_analysis:
 	cd notebooks/ \
@@ -13,8 +13,12 @@ preprocessing:
 
 training:
 	plpred-train -p data/processed/processed.csv \
-		-o data/models/models.pickle \
+		-o data/models/model.pickle \
 		-r
+
+server:
+	plpred-server -H 0.0.0.0 -p 8000 \
+		-m data/models/model.pickle
 
 test:
 	python -m pytest
