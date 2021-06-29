@@ -17,8 +17,7 @@ training:
 		-r
 
 server:
-	plpred-server -H 0.0.0.0 -p 8000 \
-		-m data/models/model.pickle
+	plpred-server -H 0.0.0.0 -p 8000
 
 test:
 	python -m pytest
